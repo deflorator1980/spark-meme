@@ -1,0 +1,9 @@
+project/
+spark-warehouse/
+target/
+*.class
+*.jar
+.sonarlint/
+*.o
+node_modules/
+project/

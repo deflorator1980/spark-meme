@@ -1,0 +1,7 @@
+[package]
+name = "pimc"
+version = "0.1.0"
+authors = ["Oscar David Arbeláez Echeverri <odarbelaeze@gmail.com>"]
+
+[dependencies]
+rand = "0.4.2"
