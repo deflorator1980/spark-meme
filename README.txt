@@ -37,3 +37,6 @@ g++ -std=c++14 -o cpppi2 cpppi2.cpp && ./cpppi2
 elixir elixirpi.exs   
 memory leak
 
+cd cljpi/
+lein uberjar && java -jar target/uberjar/cljpi-0.1.0-SNAPSHOT-standalone.jar
+9 3.1415853 Time: 119.215570998
