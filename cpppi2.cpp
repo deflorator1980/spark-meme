@@ -11,7 +11,7 @@ int main()
     std::mt19937 gen(rd()); 
     std::uniform_real_distribution<> dis(0.0, 1.0);
     
-    long n = pow(10,7);
+    long n = pow(10,9);
     double sum = 1;
     auto start = std::chrono::system_clock::now();
     double coefficient = -1;

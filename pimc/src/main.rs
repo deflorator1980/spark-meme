@@ -7,7 +7,7 @@ use std::time::{Instant};
 fn main() {
     let between = Range::new(-1f64, 1.);
     let mut rng = rand::thread_rng();
-    let total = 1_00_000_000;
+    let total = 1_000_000_000;
     let now = Instant::now();
     let in_circle: i32 = (0..total)
         .map(|_| (

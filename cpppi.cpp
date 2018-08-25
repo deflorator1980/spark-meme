@@ -21,10 +21,6 @@ int main()
 
     
     std::chrono::duration<double> diff = end-start;
-<<<<<<< HEAD
     std::cout << pi << " Time: " << diff.count() << std::endl;
-=======
-    std::cout << pi << " Time: " << diff.count();
->>>>>>> 5cf68241005f0be7ed9fbfbb4d8a55a63432c0bd
 
 }

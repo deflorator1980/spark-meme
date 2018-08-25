@@ -5,8 +5,8 @@ javac Jpi.java && java Jpi
 9  3.141632672   Time: 3.590125666
 11 3.14159618904 Time: 359.160012844
 
-
 runghc hspi.hs
+mermoy leak
 
 go run gopi.go
 9  3.141758292 2m18.763387519s
@@ -32,6 +32,7 @@ pypy
 g++ -std=c++14 -o cpppi cpppi.cpp && ./cpppi
 9 3.14159 Time: 3.46114
 g++ -std=c++14 -o cpppi2 cpppi2.cpp && ./cpppi2
+9 3.14159e+09 Time: 293.627
 
 elixir elixirpi.exs   
 memory leak
