@@ -1,0 +1,25 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: d7b715322e27b9885a7b541c614b02b9450959711e09a166e9212d7c4f8d17ab
+
+name:           PiTest
+version:        0.0.0
+build-type:     Simple
+
+executable PiTest
+  main-is: Main.hs
+  other-modules:
+      Paths_PiTest
+  hs-source-dirs:
+      src
+  ghc-options: -threaded -rtsopts -O3
+  build-depends:
+      base >=4.7 && <5
+    , clock
+    , mwc-random
+    , stopwatch
+  default-language: Haskell2010

@@ -1,0 +1,19 @@
+name:                PiTest
+
+dependencies:
+  - base >= 4.7 && < 5
+
+executables:
+  PiTest:
+    main:                Main.hs
+    source-dirs:
+      - src
+    dependencies:
+      - mwc-random
+      - clock
+      - stopwatch
+
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -O3

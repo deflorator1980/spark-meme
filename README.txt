@@ -5,6 +5,10 @@ javac Jpi.java && java Jpi
 10^9  3.141632672   Time: 3.590125666
 11 3.14159618904 Time: 359.160012844
 
+haskell_correct:
+if folder: stack run
+10^9   Time: 23.3 
+
 runghc hspi.hs
 mermoy leak
 
