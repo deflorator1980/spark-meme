@@ -44,3 +44,9 @@ memory leak
 cd cljpi/
 lein uberjar && java -jar target/uberjar/cljpi-0.1.0-SNAPSHOT-standalone.jar
 10^9 3.1415853 Time: 119.215570998
+
+nim c -d:release montecarlo.nim
+10^9
+Time taken: 11.735782188
+In quarter sector = 785398770 / 1000000000
+Estimated Pi: 3.14159508
