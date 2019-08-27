@@ -50,3 +50,15 @@ nim c -d:release montecarlo.nim
 Time taken: 11.735782188
 In quarter sector = 785398770 / 1000000000
 Estimated Pi: 3.14159508
+
+nimpy:
+nim c --threads:on --app:lib --out:monte.so monte.nim 
+python3 monte.py
+10^9
+Time taken: 188.018512425
+In quarter sector = 785397243 / 1000000000
+Estimated Pi: 3.141588972
+
+python3 pypi3.py
+10^9
+3.141532232 Time: 0:05:19.728765
