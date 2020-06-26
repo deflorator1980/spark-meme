@@ -63,6 +63,10 @@ python3 pypi3.py
 10^9
 3.141532232 Time: 0:05:19.728765
 
+graalpython pypi3.py
+10^9
+3.141606092 Time: 0:01:04.195000
+
 NumPy 10^9:
 python3 monte.py 
 3.141553172 Time: 0:21:06.646030
