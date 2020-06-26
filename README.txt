@@ -4,6 +4,10 @@ sbt clean package && $SPARK_HOME/bin/spark-submit --class "SparkPi" target/scala
 javac Jpi.java && java Jpi
 10^9  3.141632672   Time: 3.590125666
 11 3.14159618904 Time: 359.160012844
+parallel:
+10^11 3.14158935176 Time: 182.412453207
+graal:
+3.14159017888 Time: 112.82083289
 
 haskell_correct:
 if folder: stack run
