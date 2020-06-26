@@ -74,3 +74,10 @@ graalpython pypi3.py
 NumPy 10^9:
 python3 monte.py 
 3.141553172 Time: 0:21:06.646030
+
+R < rpi.r --no-save
+GraalVM
+10^9
+3.14163304314163 Time: 351.484999895096
+R
+3.141609 Time: 2638.914
