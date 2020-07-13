@@ -7,3 +7,5 @@ target/
 *.o
 node_modules/
 project/
+.ipynb_checkpoints/
+.virtual_documents/

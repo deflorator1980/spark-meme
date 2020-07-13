@@ -86,3 +86,8 @@ GraalVM
 3.14163304314163 Time: 351.484999895096
 R
 3.141609 Time: 2638.914
+
+julia julia-pi.jl
+10^9
+3.141547816
+ 60.449131 seconds (3.00 G allocations: 59.631 GiB, 0.64% gc time)
