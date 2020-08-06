@@ -1,7 +1,7 @@
 sbt clean package && $SPARK_HOME/bin/spark-submit --class "SparkPi" target/scala-2.11/spark-meme_2.11-1.0.jar 2 
 10^9 Time: 402.451816785 s
 
-javac Jpi.java && java Jpi
+'javac Jpi.java && java Jpi' or on 14+: 'java Jpi.java' 
 10^9  3.141632672   Time: 3.590125666
 10^11 3.14159618904 Time: 359.160012844
 parallel:
@@ -95,3 +95,6 @@ julia julia-pi.jl
 pynumba.py
 10^9
 3.141477828 Time: 0:00:08.933649
+
+groovy pigroovy.groovy
+3.141596212 1 minutes, 54.274 seconds
