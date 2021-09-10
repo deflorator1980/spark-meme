@@ -32,6 +32,7 @@ scalac ScalaPi2.scala && scala ScalaPi2
 or scala scalapi.scala
 OutOmMemoryError by 10^8
 
+Rust:
 cd pimc/
 cargo build --release && cargo run --release
 10^9 3.141585792 Time: 29.12
@@ -98,3 +99,8 @@ pynumba.py
 
 groovy pigroovy.groovy
 3.141596212 1 minutes, 54.274 seconds
+
+Fortran:
+gfortran fort_pi.f90 -o fort_pi && ./fort_pi
+   3.14162755    
+Time = 11.949 seconds.
