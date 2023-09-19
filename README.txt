@@ -40,13 +40,45 @@ cargo build --release && cargo run --release
 node
 10^9 3.141584332 'Time:' 31
 
-pypy
+pypy  # doesn't work with numpy (monte.py)
 10^9 3.141525904 Time: 0:00:39.799005
 
+
+
+===============================================
+
 g++ -std=c++14 -o cpppi cpppi.cpp && ./cpppi
+g++ -std=c++20 -o cpppi cpppi.cpp && ./cpppi
+# g++ -std=c++14 -o cpppi3 cpppi3.cpp && ./cpppi3
+g++ -std=c++20 -pthread -O3 cpppi -c cpppi.cpp && ./cpppi
+10^9 3.14159 Time: 2.45827
+g++ -std=c++20 -pthread -O3 cpppi3 -c cpppi3.cpp && ./cpppi3
 10^9 3.14159 Time: 3.46114
 g++ -std=c++14 -o cpppi2 cpppi2.cpp && ./cpppi2
 10^9 3.14159e+09 Time: 293.627
+--------
+gcc-13/  - Dockerfile
+
+
+/usr/local/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" -S /tmp/tmp.Z2ozByJYmW -B /tmp/tmp.Z2ozByJYmW/cmake-build-release-gcc-11
+/usr/local/bin/cmake --build /tmp/tmp.Z2ozByJYmW/cmake-build-release-gcc-11 --target pi_test -- -j 19
+
+pi_te:
+Calculated pi = 3.1415927
+Real pi       = 3.1415927
+Error         = -9.9548725e-10
+Time          = 382ms
+Threads       = 6
+Iterations    = 1000000000
+
+pi_test   works in docker, without libs
+
+для pi_te
+В CMakeList.txt добавть строчку:
+target_link_libraries(pi_test -static)
+после add_executable(pi_test main.cpp)
+
+========================================
 
 elixir elixirpi.exs   
 memory leak
@@ -69,7 +101,7 @@ Time taken: 188.018512425
 In quarter sector = 785397243 / 1000000000
 Estimated Pi: 3.141588972
 
-python3 pypi3.py
+python3 pypi3.py   # 3.11 better than 3.8
 10^9
 3.141532232 Time: 0:05:19.728765
 

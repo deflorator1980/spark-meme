@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  gcc-server:
+    build:
+      context: .
+
+    image: gcc:13
+
+    container_name: gcc-13-server
+    hostname: gcc-13-server #optional
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Moscow
+    restart: unless-stopped
+    networks:
+      dev-net:
+        ipv4_address: 192.168.101.13
+              
+
+networks:
+  dev-net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.101.0/24
+          gateway: 192.168.101.1
