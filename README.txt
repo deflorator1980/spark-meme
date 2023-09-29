@@ -95,7 +95,6 @@ Estimated Pi: 3.14159508
 
 nimpy:
 nim c --threads:on --app:lib --out:monte.so monte.nim 
-python3 monte.py
 10^9
 Time taken: 188.018512425
 In quarter sector = 785397243 / 1000000000
@@ -111,7 +110,7 @@ graalpython pypi3.py
 
 NumPy 10^9:
 python3 monte.py 
-3.141553172 Time: 0:21:06.646030
+3.141607268 Time: 0:00:18.843590
 
 R < rpi.r --no-save
 GraalVM
