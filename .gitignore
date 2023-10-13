@@ -3,10 +3,10 @@ spark-warehouse/
 target/
 *.class
 *.jar
-.sonarlint/
 *.o
 node_modules/
 project/
 .ipynb_checkpoints/
 .virtual_documents/
 venv/
+.vscode/

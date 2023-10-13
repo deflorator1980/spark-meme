@@ -135,3 +135,19 @@ Fortran:
 gfortran fort_pi.f90 -o fort_pi && ./fort_pi
    3.14162755    
 Time = 11.949 seconds.
+
+Lua:
+lua lualua.lua 
+memory leak (?)
+
+Pytorch:
+python monte_torch.py
+better than NumPy (~17)
+
+Tensorflow:
+python monte_tf.py 
+tf.Tensor(3.141583524, shape=(), dtype=float64) Time: 0:00:08.490882
+with cuda - OOM
+10^7 - cuda ok
+export CUDA_VISIBLE_DEVICES=""
+unset CUDA_VISIBLE_DEVICES

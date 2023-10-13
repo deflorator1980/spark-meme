@@ -1,0 +1,6 @@
+cupy-cuda11x
+numpy
+jupyterlab<4
+jupyterlab-git
+tensorflow[and-cuda]
+torch
