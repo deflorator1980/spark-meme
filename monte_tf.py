@@ -1,6 +1,9 @@
 import tensorflow as tf
 from datetime import datetime
 
+# import os
+# os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 print(tf.config.list_physical_devices('GPU'))
 print(tf.sysconfig.get_build_info())
 
