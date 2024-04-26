@@ -3,7 +3,7 @@ set start [clock seconds]
 
 # Initialize sum and n
 set sum 0
-set n [expr {10**7}]
+set n [expr {10**9}]
 
 # Loop from 0 to n-1
 for {set i 0} {$i < $n} {incr i} {

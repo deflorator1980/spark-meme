@@ -156,3 +156,8 @@ Bash:
 ./bash_monte3.sh 
 10**5
 pi = 3.1405600000, Time: 637005.54 ms
+
+Tcl:
+tclsh tcl_monte.tcl
+10**9 
+pi = 3.141582964, Time: 1244 seconds
