@@ -151,3 +151,8 @@ with cuda - OOM
 10^7 - cuda ok
 export CUDA_VISIBLE_DEVICES=""
 unset CUDA_VISIBLE_DEVICES
+
+Bash:
+./bash_monte3.sh 
+10**5
+pi = 3.1405600000, Time: 637005.54 ms
