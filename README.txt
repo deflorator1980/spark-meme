@@ -161,3 +161,8 @@ Tcl:
 tclsh tcl_monte.tcl
 10**9 
 pi = 3.141582964, Time: 1244 seconds
+
+
+php php.php 
+10**9
+3.141614756 Time: 179.21562719345 seconds
