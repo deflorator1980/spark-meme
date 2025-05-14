@@ -1,6 +1,9 @@
-cupy-cuda11x
+taichi
+# cupy-cuda11x
 numpy
-jupyterlab<4
+jupyterlab
 jupyterlab-git
-tensorflow[and-cuda]
-torch
+# tensorflow[and-cuda]
+# torch
+numba
+numexpr

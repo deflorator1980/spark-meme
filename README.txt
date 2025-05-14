@@ -124,6 +124,9 @@ julia julia-pi.jl
 3.141547816
  60.449131 seconds (3.00 G allocations: 59.631 GiB, 0.64% gc time)
 
+python pynumba_claude.py   # best
+10^11
+3.14159106168 Time: 0:02:19.160722
 pynumba.py
 10^9
 3.141477828 Time: 0:00:08.933649
@@ -166,3 +169,8 @@ pi = 3.141582964, Time: 1244 seconds
 php php.php 
 10**9
 3.141614756 Time: 179.21562719345 seconds
+
+numexpr -- утекает память
+
+taichi  -- for GPU
+https://grok.com/chat/98764b36-8902-4343-80c3-e95e3ad6a2b5
